@@ -1,0 +1,67 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo uma fonte padrão para o site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a6096;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do campo de pesquisa */
+#raca {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    width: 250px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+#pesquisar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #04274d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#pesquisar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da galeria de imagens */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
